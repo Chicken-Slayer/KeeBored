@@ -4116,6 +4116,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 54.61) (xy 280.67 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f01a4d9-fe8a-4181-8ca1-acdaadd4c01c")
+	)
+	(wire
+		(pts
 			(xy 99.06 45.72) (xy 99.06 50.8)
 		)
 		(stroke
@@ -6226,6 +6236,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 57.15) (xy 280.67 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db11b8a3-7691-4860-84ca-ebc7a19445da")
+	)
+	(wire
+		(pts
 			(xy 149.86 45.72) (xy 149.86 50.8)
 		)
 		(stroke
@@ -6938,6 +6958,30 @@
 			)
 		)
 	)
+	(global_label "OLED_SCL"
+		(shape input)
+		(at 280.67 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "42447394-373e-4250-83fd-9fba0fcabe64")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 269.0862 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "C9"
 		(shape input)
 		(at 351.79 67.31 180)
@@ -7247,6 +7291,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "OLED_SDA"
+		(shape input)
+		(at 280.67 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "87570a81-21aa-4577-819f-64e5b78d6cb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 269.0257 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -14303,6 +14371,84 @@
 			(project "KeeBored"
 				(path "/9bc0cb03-a3e5-4670-9f26-09984cc850ad"
 					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 265.43 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61c44bdd-6bdf-4161-83b5-a4d6972297ef")
+		(property "Reference" "#PWR04"
+			(at 265.43 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 265.43 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 265.43 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0dbd6c30-f1f1-4842-800c-c9ba5545ffcb")
+		)
+		(instances
+			(project "KeeBored"
+				(path "/9bc0cb03-a3e5-4670-9f26-09984cc850ad"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -25993,7 +26139,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 259.08 55.88 0)
+		(at 285.75 54.61 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26003,7 +26149,7 @@
 		(dnp no)
 		(uuid "e0791d92-fc68-4490-a71c-c6d215466797")
 		(property "Reference" "J1"
-			(at 261.366 47.244 0)
+			(at 283.464 63.246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26013,7 +26159,7 @@
 			)
 		)
 		(property "Value" "OLED"
-			(at 261.366 49.784 0)
+			(at 283.464 60.706 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26023,7 +26169,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 259.08 55.88 0)
+			(at 285.75 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26034,7 +26180,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 55.88 0)
+			(at 285.75 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26045,7 +26191,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 259.08 55.88 0)
+			(at 285.75 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26071,6 +26217,84 @@
 			(project "KeeBored"
 				(path "/9bc0cb03-a3e5-4670-9f26-09984cc850ad"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 265.43 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2629555-fb3f-4faa-abf1-fed912e45e2d")
+		(property "Reference" "#PWR05"
+			(at 265.43 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 265.43 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 265.43 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ea7ca61b-bbe8-4dd8-9393-635ab6b85b37")
+		)
+		(instances
+			(project "KeeBored"
+				(path "/9bc0cb03-a3e5-4670-9f26-09984cc850ad"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
